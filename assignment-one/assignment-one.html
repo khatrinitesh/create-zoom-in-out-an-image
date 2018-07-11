@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repository</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<div class="button_block">
+		<button class="btn_plus">&plus;</button>
+		<button class="btn_minus">&minus;</button>
+	</div>
+	<img src="img/wallpaper.jpg" alt="" class='img_responsive img_effects'>
+
+	<script type='text/javascript' src='js/jquery-1.12.0.min.js'></script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+			$(".btn_plus").on("click",function(){
+				$("img").width($('img').width()+100);
+				$("img").width($('img').width()+100);
+			});
+			$(".btn_minus").on("click",function(){
+				$("img").width($('img').width()-100);
+				$("img").width($('img').width()-100);
+			});
+		});
+	</script>
+</body>
+</html>
